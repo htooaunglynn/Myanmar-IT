@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+.btn {
+    margin-left: 130px;
+}
+
+.category {
+    margin-left: 60px;
+}
+
+li {
+    list-style: none;
+}
+
+#bd {
+    /* background-color: lightblue; */
+    background-image: linear-gradient(
+        155deg, 
+        #a9f1df,
+        #ffbbbb 
+    );
+    height: 100vh;
+}
+
+.navbar {
+    background-image: linear-gradient(
+        155deg, 
+        #a9f1df
+    );
+}

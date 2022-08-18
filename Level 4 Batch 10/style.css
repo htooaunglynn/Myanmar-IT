@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@700&display=swap');
+
+
+
+body{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: lightsteelblue;
+}
+
+nav{
+    width: 600px;
+    margin: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+ul li a{
+    text-decoration: none;
+    color: lightcoral;
+
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+main{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #BFBFBF;
+    box-shadow: 5px 5px 1px #aaaaaa;
+    background-color: lightblue ;
+}
+
+.container{
+    width: 550px;
+}
+
+main .container .assig_group{
+    display: flex;
+    flex-wrap: wrap;
+    display: none;
+}
+
+.collection_link{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.collection_link a{
+    text-decoration: none;
+    color: lightcoral;
+    margin: 15px;
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid #BFBFBF;
+    box-shadow: 5px 5px 1px #aaaaaa;
+    font-family: 'Edu TAS Beginner', cursive;
+}
+
+.assig_group{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+footer {
+    position: absolute;
+    margin-top: 470px;
+    margin-right: 1200px;
+}
+
+
+footer a{
+    text-decoration: none;
+    font-size: 20px;
+    color: red;
+
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid red;
+}
+
+footer a:hover {
+    color: white;
+    background-color: red;
+}

@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Oswald_VariableFont';
+    src: url(../fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald_Blod';
+    src: url(../fonts/Oswald/static/Oswald-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald_ExtraLight';
+    src: url(../fonts/Oswald/static/Oswald-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald_Light';
+    src: url(../fonts/Oswald/static/Oswald-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald_Medium';
+    src: url(../fonts/Oswald/static/Oswald-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald_Regular';
+    src: url(../fonts/Oswald/static/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Oswald_SemiBold';
+    src: url(../fonts/Oswald/static/Oswald-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_Black';
+    src: url(../fonts/Taviraj/Taviraj-Black.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_BlackItalic';
+    src: url(../fonts/Taviraj/Taviraj-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_Blod';
+    src: url(../fonts/Taviraj/Taviraj-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_BoldItalic';
+    src: url(../fonts/Taviraj/Taviraj-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_ExtraBold';
+    src: url(../fonts/Taviraj/Taviraj-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_ExtraBoldItalic';
+    src: url(../fonts/Taviraj/Taviraj-ExtraBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_ExtraLight';
+    src: url(../fonts/Taviraj/Taviraj-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_ExtraLightItalic';
+    src: url(../fonts/Taviraj/Taviraj-ExtraLightItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_Italic';
+    src: url(../fonts/Taviraj/Taviraj-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_Light';
+    src: url(../fonts/Taviraj/Taviraj-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_LightItalic';
+    src: url(../fonts/Taviraj/Taviraj-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_Medium';
+    src: url(../fonts/Taviraj/Taviraj-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_MediumItalic';
+    src: url(../fonts/Taviraj/Taviraj-MediumItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_Regular';
+    src: url(../fonts/Taviraj/Taviraj-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_SemiBold';
+    src: url(../fonts/Taviraj/Taviraj-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_SemiBoldItalic';
+    src: url(../fonts/Taviraj/Taviraj-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_Thin';
+    src: url(../fonts/Taviraj/Taviraj-Thin.ttf);
+}
+
+@font-face {
+    font-family: 'Taviraj_ThinItalic';
+    src: url(../fonts/Taviraj/Taviraj-ThinItalic.ttf);
+}
+
+@font-face {
+    font-family: 'QuattrocentoSans_Regular';
+    src: url('../fonts/Quattrocento_Sans/QuattrocentoSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'QuattrocentoSans_Bold';
+    src: url('../fonts/Quattrocento_Sans/QuattrocentoSans-Bold.ttf');
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+    <div id="ha">
+        <!-- boolean attribute  -->
+        <button :disabled="isButtonDisable">Button</button>
+
+        <input type="number" name="age" id="age" v-model="age">
+        <button @click="mybtn">My BTN</button>
+        <input type="text" name="say" id="say" :disabled="isInputDisable">
+
+        <!-- conditional rendering  -->
+        <p v-if="mark>=40 && mark <=79">Pass</p>
+        <p v-else-if="mark<40">Fail</p>
+        <p v-else>D</p>
+
+        <!-- event modifier  -->
+        <form action="" method="post" @submit.prevent="validate">
+            <input type="text" name="username" id="username">
+            <br>
+            <input type="text" name="email" id="email">
+            <br>
+            <input type="submit" value="Save">
+        </form>
+        <!-- event modifier  -->
+
+        <!-- binding object  -->
+        <p :class="{active: isActive, 'text-danger': hasError}">Hello Vue</p> 
+        <!-- binding object  -->
+
+        <!-- list rendering  -->
+
+        <div v-if="students.length>1">
+            <table>
+                <thead>
+                    <tr>
+                        <th>NO</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="(student,index) in students">
+                        <td>{{++index}}</td>
+                        <td>{{student.name}}</td>
+                        <td>{{student.age}}</td>
+                        <td>{{student.gender}}</td>
+                        <td>
+                            <button>Detail</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- list rendering  -->
+    </div>
+    <!-- js  -->
+    <script src="main.js"></script>
+</body>
+</html>
