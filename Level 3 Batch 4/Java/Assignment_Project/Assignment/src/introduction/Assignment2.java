@@ -17,8 +17,7 @@ public class Assignment2 {
 			System.out.print("Continue (y/n)? : ");
 			ask = sc.nextLine().toLowerCase();
 			
-					
-		}while("y".equals(ask));
+		} while("y".equals(ask));
 		
 		sc.close();
 		
