@@ -1,0 +1,27 @@
+
+public class HelloWorld {
+	public static void main(String arg[]) {
+		String firstName = "Htoo";
+		String middleName = "Aung";
+		String lastName = "Lynn";
+		
+		System.out.println("Hello Java Programming!");
+		System.out.println("Welcome from Batch 4");
+		System.out.println(firstName + middleName + lastName);
+		
+		double num1 = 282.22;
+		double num2 = 332.22;
+		
+		double resultAdd = num1 + num2;
+		double resultMul = num1 * num2;
+		double resultSub = num1 - num2;
+		double resultDiv = num1 / num2;
+		double resultRem = num1 % num2;
+		
+		System.out.println(resultAdd);
+		System.out.println(resultSub);
+		System.out.println(resultMul);
+		System.out.println(resultDiv);
+		System.out.println(resultRem);
+	}
+}
