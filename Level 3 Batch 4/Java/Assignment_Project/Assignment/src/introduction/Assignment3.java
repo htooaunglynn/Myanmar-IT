@@ -15,10 +15,11 @@ public class Assignment3 {
 	
 	public static void computer() {
 		
-		double[][] price = new double[4][6];
 		int row = 0, column = 0;
 		double currency = 0.0, dolar = 0.0;
 		boolean statusRow = false, statusCol = false;
+		
+		double[][] price = new double[4][6];
 		
 		price[0][0] = 230.21;
 		price[0][1] = 400.21;

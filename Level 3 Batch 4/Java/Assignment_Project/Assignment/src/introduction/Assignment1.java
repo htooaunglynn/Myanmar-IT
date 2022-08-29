@@ -14,7 +14,7 @@ public class Assignment1 {
 		//open scanner
 		Scanner scanner = new Scanner(System.in);
 		
-		for(int i = 0; i < 5; i++) {
+		for (int i = 0; i < 5; i++) {
 			
 			System.out.print("Enter " + (i+1) + " number : " );
 			number[i] = scanner.nextInt();
@@ -25,7 +25,7 @@ public class Assignment1 {
 		//close scanner
 		scanner.close();
 	
-		for(int j = 0; j < 5; j++) {
+		for (int j = 0; j < 5; j++) {
 			
 			if(number[j] == 0) 
 				zeroNum++;
