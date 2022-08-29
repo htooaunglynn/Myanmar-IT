@@ -26,9 +26,7 @@ public class Assignment2 {
 	
 	public static void sleepTime(Scanner scanner) {
 		
-		int resultHour, startHour, endHour, halfHour = 12;
-		
-		scanner = new Scanner(System.in);
+		int resultHour, startHour, endHour, halfHour = 12;			
 		
 		System.out.print("When do you go bed : ");
 		startHour = scanner.nextInt();
@@ -40,9 +38,9 @@ public class Assignment2 {
 		
 		resultHour = (halfHour - startHour) + endHour;
 		
-		if(resultHour < 5)
+		if (resultHour < 5)
 			System.out.println("You are very hardworking");
-		else if(resultHour >= 5 && resultHour <= 8)
+		else if (resultHour >= 5 && resultHour <= 8)
 			System.out.println("You take care your healthy well!!!");
 		else
 			System.out.println("You are abnormal");
