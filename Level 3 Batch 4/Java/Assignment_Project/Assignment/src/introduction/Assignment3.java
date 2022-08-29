@@ -107,6 +107,8 @@ public class Assignment3 {
 			
 			dolar = price[row][column];
 			
+			System.out.println("$" + dolar);
+			
 			System.out.print("Enter currency : ");
 			currency = sc.nextDouble();
 			
