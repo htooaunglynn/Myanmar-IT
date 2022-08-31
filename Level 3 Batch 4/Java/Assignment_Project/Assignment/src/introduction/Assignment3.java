@@ -71,6 +71,8 @@ public class Assignment3 {
 			}
 		}
 		
+		System.out.println();
+		
 		if (statusCol == false) {
 			
 			System.out.println("Brands does not have.");
@@ -103,6 +105,8 @@ public class Assignment3 {
 			
 		}
 		
+		System.out.println();
+		
 		if (statusRow == true && statusCol == true) {
 			
 			dolar = price[row][column];
@@ -127,10 +131,10 @@ public class Assignment3 {
 		
 		product[0][0] = "Computer";
 		product[0][1] = "Lenovo";
-		product[0][2] = "hp";
+		product[0][2] = "hp   ";
 		product[0][3] = "Samsung";
-		product[0][4] = "Acer";
-		product[0][5] = "Dell";
+		product[0][4] = "Acer   ";
+		product[0][5] = "Dell   ";
 		product[0][6] = "Asus";
 		
 		product[1][0] = "Core i3";
@@ -165,14 +169,18 @@ public class Assignment3 {
 		product[4][5] = "1021.32";
 		product[4][6] = "2075.97";
 		
+		System.out.println("------------------------------------------- Information List -------------------------------------------");
+		
 		for (var row : product) {
 			
 			for (var c : row)	
-				System.out.print(c + "\t");
+				System.out.print(c + "   \t");
 			
 			System.out.println();
 			
 		}
+		
+		System.out.println("--------------------------------------------------------------------------------------------------------");
 		
 	}
 

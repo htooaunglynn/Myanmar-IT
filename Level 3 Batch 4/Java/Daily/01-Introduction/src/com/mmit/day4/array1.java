@@ -43,9 +43,9 @@ public class array1 {
 		change(data);
 		System.out.println("After, data : " + data);
 		
-		Song s = new Song();
-		s.name = "Love Yourself";
-		System.out.println("Before, name : " + s.name);
+//		Song s = new Song();
+//		s.name = "Love Yourself";
+//		System.out.println("Before, name : " + s.name);
 	}
 	
 	private static void change(String data) {
