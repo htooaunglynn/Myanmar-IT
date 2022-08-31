@@ -30,7 +30,7 @@ public class Formatting {
 		DateTimeFormatter f2 = DateTimeFormatter.ofPattern("h-mm-ss a");
 		
 		System.out.println("Default : " + time);
-		System.out.println("");
+		//System.out.println("");
 		
 		
 	}
