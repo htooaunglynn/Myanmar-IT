@@ -26,17 +26,15 @@ public class Assignment5 {
 		System.out.println("\t4. Spicy Noodle");
 			
 		System.out.print("Please choose item : ");
-		int item = sc.nextInt();
+		String item = sc.nextLine();
 		
-		sc.nextLine();
-		
-		if (item == 1) 
+		if ("1".equals(item)) 
 			result = "Pizza";
-		else if (item == 2) 
+		else if ("2".equals(item)) 
 			result = "Burger";
-		else if (item == 3)
+		else if ("3".equals(item))
 			result = "Milk Tea";
-		else if (item == 4)
+		else if ("4".equals(item))
 			result = "Spicy Noodle";
 		else 
 			result = "null";
@@ -45,16 +43,14 @@ public class Assignment5 {
 		
 	} // end of menu
 	
-	public static int orderTime(Scanner sc) {
+	public static String orderTime(Scanner sc) {
 		
 		System.out.println("***** Order Time *****");
 		System.out.println("\t1. Order Now? ");
 		System.out.println("\t2. Preorder? ");
 		
 		System.out.print("Please choose : ");
-		int result = sc.nextInt();
-		
-		sc.nextLine();
+		String result = sc.nextLine();
 		
 		return result;
 		
@@ -71,23 +67,21 @@ public class Assignment5 {
 		System.out.println("\t4. DD (45 mins) ");
 		
 		System.out.print("Please choose townshiop : ");
-		int number = sc.nextInt();
-		
-		sc.nextLine();
-		
-		if (number == 1) {
+		String number = sc.nextLine();
+			
+		if ("1".equals(number)) {
 			result[0] = "AA";
 			result[1] = "15";
 		} 
-		else if (number == 2) {
+		else if ("2".equals(number)) {
 			result[0] = "BB";
 			result[1] = "30";
 		}
-		else if (number == 3) {
+		else if ("3".equals(number)) {
 			result[0] = "CC";
 			result[1] = "10";
 		}
-		else if (number == 4) {
+		else if ("4".equals(number)) {
 			result[0] = "DD";
 			result[1] = "45";
 		} 
@@ -103,14 +97,14 @@ public class Assignment5 {
 	public static void order(Scanner sc) {
 		
 		String[] timeAndAdr = {null, null};
-		String item = null, location = null;
-		int minute = 0, type = 0;
+		String item = null, location = null, type = null;
+		int minute = 0;
 		
 		do {
 			item = menu(sc);
 			
 			if ("null".equals(item))
-				System.out.println("\n\nInput Error! \nPlease input (1, 2, 3, 4, 5)\n\n");
+				System.out.println("\n\nInput Error! \nPlease input (1, 2, 3, 4)\n\n");
 		} while ("null".equals(item));
 		
 		do {
@@ -119,17 +113,17 @@ public class Assignment5 {
 			minute = Integer.parseInt(timeAndAdr[1]);
 			
 			if ("null".equals(location))
-				System.out.println("\n\nInput Error! \nPlease input (1, 2, 3, 4, 5)\n\n");
+				System.out.println("\n\nInput Error! \nPlease input (1, 2, 3, 4)\n\n");
 		} while ("null".equals(location));
 		
 		do {
 			type = orderTime(sc);
 			
-			if (type != 1 && type != 2)
+			if (!"1".equals(type) && !"2".equals(type))
 				System.out.println("\n\nInput Error! \nPlease input (1, 2)\n\n");
-		} while (type != 1 && type != 2);
+		} while (!"1".equals(type) && !"2".equals(type));
 		
-		if (type == 1) {
+		if ("1".equals(type)) {
 			LocalTime ima = LocalTime.now();
 			DateTimeFormatter f1 = DateTimeFormatter.ofPattern("hh:mm:ss a");
 			
