@@ -1,6 +1,5 @@
 package introduction;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Assignment8 {
