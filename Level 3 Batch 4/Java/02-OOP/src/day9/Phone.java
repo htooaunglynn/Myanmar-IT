@@ -34,6 +34,8 @@ public class Phone {
 		System.out.println("Brand : " + obj.brand);
 		System.out.println("Color : " + obj.color);
 		System.out.println("Price : " + obj.price + " MMks");
+		obj.call();
+		obj.sendSms();
 		System.out.println("Shop : " + Phone.shop + "\n\n");
 		
 		Phone.shop = "iSure";
@@ -42,6 +44,8 @@ public class Phone {
 		System.out.println("Color : " + obj2.color);
 		System.out.println("Price : " + obj2.price + " MMks");
 		System.out.println("Shop : " + Phone.shop);
+		obj2.call();
+		obj2.sendSms();
 	}
 
 }
