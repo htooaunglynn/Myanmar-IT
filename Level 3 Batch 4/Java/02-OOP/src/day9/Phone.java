@@ -32,13 +32,14 @@ public class Phone {
 		
 		System.out.println("----- Object 1 data -----");
 		System.out.println("Brand : " + obj.brand);
-		System.out.println("Color : " + obj.color);
+ 		System.out.println("Color : " + obj.color);
 		System.out.println("Price : " + obj.price + " MMks");
 		obj.call();
 		obj.sendSms();
 		System.out.println("Shop : " + Phone.shop + "\n\n");
 		
 		Phone.shop = "iSure";
+		obj2.color = "red";
 		System.out.println("----- Object 2 data -----");
 		System.out.println("Brand : " + obj2.brand);
 		System.out.println("Color : " + obj2.color);

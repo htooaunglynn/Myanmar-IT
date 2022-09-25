@@ -36,4 +36,12 @@
 	<section name="NewPackageWizardPage">
 		<item key="create_package_info_java" value="false"/>
 	</section>
+	<section name="nls_accessor_history">
+		<section name="0">
+			<item key="accessorName" value="Messages"/>
+			<item key="accessorPackage" value="=Assignment/src&lt;introduction"/>
+			<item key="bundleName" value="messages.properties"/>
+			<item key="bundlePackage" value="=Assignment/src&lt;introduction"/>
+		</section>
+	</section>
 </section>
