@@ -1,4 +1,4 @@
-package oop.Assignment2;
+package oop.Assignment2.EncapsulationDemo;
 
 import java.util.Scanner;
 

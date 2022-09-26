@@ -1,4 +1,4 @@
-package oop.Assignment2;
+package oop.Assignment2.EncapsulationDemo;
 
 public class Students {
 	private int studentID, mark;
