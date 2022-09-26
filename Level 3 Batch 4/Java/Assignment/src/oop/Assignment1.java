@@ -3,55 +3,49 @@ package oop;
 import java.util.Scanner;
 
 public class Assignment1 {
-	BankAccount bank = new BankAccount();
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+        BankAccount bank = new BankAccount("Aung", "1234", "admin", 7894);
+        bank.balance = 100000;
+
+        bank.changePassword("4563",sc);
+
+        bank.deposit(100, sc);
+
+        try {
+            bank.withdraw(1000);
+        }
+        catch (Insufficient e) {
+            System.err.println(e.getMessage());
+        }
+
+        sc.close();
+        bank.showInfo();
+	}
 }
 
 class BankAccount {
-
-    private int accountNo, balance = 1000;
-    private String holderName, pinNo, password;
-
-    public int getAccountNo() { return this.accountNo; }
-
-    public void setAccountNo(int accountNo) { this.accountNo = accountNo; }
-
-    public int getBalance() { return this.balance; }
-
-    public void setBalance(int balance) { this.balance = balance; }
-
-    public String getHolderName() { return this.holderName; }
-
-    public void setHolderName(String holderName) { this.holderName = holderName; }
-
-    public String getPinNo() { return this.pinNo; }
-
-    public void setPinNo(String pinNo) { this.pinNo = pinNo; }
-
-    public String getPassword() { return this.password; }
-
-    public void setPassword(String password) { this.password = password; }
+    public int accountNo, balance = 1000;
+    public String holderName, pinNo, password;
 
     public BankAccount() {
 
     }
 
     public BankAccount(String holderName, String pinNo, String password, int accountNo) {
-        try{
-            setHolderName(holderName);
-            setPassword(password);
-            setPinNo(pinNo);
-            setAccountNo(accountNo);
-        } catch (Exception e) {
-            System.err.println(e.getMessage());
-        }
+        this.accountNo = accountNo;
+        this.holderName = holderName;
+        this.pinNo = pinNo;
+        this.password = password;
     }
 
     public void changePassword(String newPassword, Scanner sc) {
         System.out.print("Enter your pin number : ");
         String pin = sc.nextLine();
 
-        if(getPinNo().equals(pin))
-            setPinNo(newPassword);
+        if(this.pinNo.equals(pin))
+            this.password = newPassword;
         else
             System.err.println("Wrong Pin number.");
     }
@@ -66,42 +60,41 @@ class BankAccount {
         sc.nextLine();
 
         int total = depositAmount + (depositAmount * interest * month / 100);
-        int result = getBalance() - total;
+        int result = balance - total;
+        this.balance = result;
 
         if (result > 0) {
             System.out.println("Deposit : " + total);
-            System.out.println("Now Balance : " + result);
         } else
             System.err.println("Not enough.");
     }
 
     public void withdraw(int money) throws Insufficient {
-        int result = getBalance() - money;
-        setBalance(result);
+        int result = balance - money;
+        balance = result;
         if (result > 0) {
             System.out.println("Withdraw : " + money);
-            System.out.println("Now Balance : " + getBalance());
         } else {
-            Insufficient in = new Insufficient("Not enough");
-            throw in;
+            throw new Insufficient("Invalid pin number");
         }
     }
 
     public void showInfo() {
-        System.out.println("Holder Name : " + getHolderName());
-        System.out.println("Password : " + getPassword());
-        System.out.println("Pin Number : " + getPinNo());
-        System.out.println("Account Number : " + getAccountNo());
-        System.out.println("Balance : " + getBalance());
+        System.out.println("Holder Name : " + this.holderName);
+        System.out.println("Password : " + this.password);
+        System.out.println("Pin Number : " + this.pinNo);
+        System.out.println("Account Number : " + this.accountNo);
+        System.out.println("Balance : " + balance);
     }
+
 }
 
 class Insufficient extends Exception {
-    public Insufficient() {
+    
+	public Insufficient() {
 
     }
-
     public Insufficient(String msg) {
-        System.err.println(msg);
+        super(msg);
     }
 }
