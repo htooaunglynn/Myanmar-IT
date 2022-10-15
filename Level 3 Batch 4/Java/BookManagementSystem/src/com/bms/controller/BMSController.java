@@ -1,4 +1,4 @@
-package com.mmit;
+package com.bms.controller;
 
 public class BMSController {
 	
